@@ -14,10 +14,10 @@ class TestOrderPage:
     @pytest.mark.parametrize(
         'button_order, name, lastname, address, number, station, date, period, color, comment',
         [
-            (Main.button_order_1, Data.name_1, Data.lastname_1, Data.address_1, Data.number_1,
-             Data.station_1, Data.date_1, Order.period_1, Order.chb_black, Data.comment_1),
-            (Main.button_order_2, Data.name_2, Data.lastname_2, Data.address_2, Data.number_2,
-             Data.station_2, Data.date_2, Order.period_2, Order.chb_grey, Data.comment_2)
+            (Main.button_order_1, Data.NAME_1, Data.LASTNAME_1, Data.ADDRESS_1, Data.NUMBER_1,
+             Data.STATION_1, Data.DATE_1, Order.period_1, Order.chb_black, Data.COMMENT_1),
+            (Main.button_order_2, Data.NAME_2, Data.LASTNAME_2, Data.ADDRESS_2, Data.NUMBER_2,
+             Data.STATION_2, Data.DATE_2, Order.period_2, Order.chb_black, Data.COMMENT_2)
         ]
     )
     def test_order_is_success(self, driver, open_browser, button_order, name, lastname, address, number, station, date, period, color, comment):

@@ -36,3 +36,12 @@ class OrderPage(BasePage):
         self.click_on_element(self.locators.button_yes)
         success_mes = self.get_text(self.locators.success_order)
         return success_mes
+
+    @allure.step('Проверяем успешный переход на страницу Дзена')
+    def check_switch_to_dzen(self):
+        self.get_tab_and_switch()
+        self.check_switch_dzen()
+
+    @allure.step('Получаем текущий url')
+    def get_current_url(self):
+        return self.driver.current_url

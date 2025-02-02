@@ -11,13 +11,13 @@ class TestDropDownList:
     @pytest.mark.parametrize(
         'locator, answer_cur, answer_exc',
         [
-            (LocatorsMainPage.list_question_1, LocatorsMainPage.text_answer_1, TestData.text_1),
-            (LocatorsMainPage.list_question_2, LocatorsMainPage.text_answer_2, TestData.text_2),
-            (LocatorsMainPage.list_question_3, LocatorsMainPage.text_answer_3, TestData.text_3),
-            (LocatorsMainPage.list_question_4, LocatorsMainPage.text_answer_4, TestData.text_4),
-            (LocatorsMainPage.list_question_5, LocatorsMainPage.text_answer_5, TestData.text_5),
-            (LocatorsMainPage.list_question_6, LocatorsMainPage.text_answer_6, TestData.text_6),
-            (LocatorsMainPage.list_question_7, LocatorsMainPage.text_answer_7, TestData.text_7),
+            (LocatorsMainPage.list_question_1, LocatorsMainPage.text_answer_1, TestData.TEXT_1),
+            (LocatorsMainPage.list_question_2, LocatorsMainPage.text_answer_2, TestData.TEXT_2),
+            (LocatorsMainPage.list_question_3, LocatorsMainPage.text_answer_3, TestData.TEXT_3),
+            (LocatorsMainPage.list_question_4, LocatorsMainPage.text_answer_4, TestData.TEXT_4),
+            (LocatorsMainPage.list_question_5, LocatorsMainPage.text_answer_5, TestData.TEXT_5),
+            (LocatorsMainPage.list_question_6, LocatorsMainPage.text_answer_6, TestData.TEXT_6),
+            (LocatorsMainPage.list_question_7, LocatorsMainPage.text_answer_7, TestData.TEXT_7),
         ]
     )
     def test_drop_down_list(self, driver, open_browser, locator, answer_cur, answer_exc):
